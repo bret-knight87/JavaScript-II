@@ -3,6 +3,18 @@
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
+function band() {
+  const singer = "Bayliss";
+  console.log(`Brendan ${singer} is the singer of this band!`)
+
+  function sound() {
+    const soundEngineer = "Mitchell";
+    console.log(`Chris ${soundEngineer} is the sound man but ${singer} is the singer!`)
+  }
+  sound();
+}
+
+band();
 
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
